@@ -1,0 +1,54 @@
+1- node js kurulumu
+2- cmd üzerinden kurulum testi
+	node--version 
+	npm --version 
+3- cmd üzerinden 
+	npm cache clean --force 
+	npm cache verfiy
+4- npm i -g @angular/cli@13.0.0
+5- Angular Global Cli Test 
+	ng --version
+
+-- Proje Açma işlemi--
+
+1- Yeni bir proje açma 
+ng new <projectName>
+2- Tarayıcıda serve etme 
+ng serve --o 
+
+3- Angular Farklı Environment Çalıştırma
+
+ng serve -c staging
+ng serve -c production
+
+Angular Json dosyasına staging ekledik. Default da yok
+
+
+4- Angular Build
+
+ng build -c production
+ng build -c staging
+
+Build sonrası dist klasöründe js bundle olarak tutulur. Bundle'lanmış js dosyasına chunk derler.
+
+4- Assets
+
+Image, Styles, i18n (Multi Language) static files tutulur
+
+Not: Main.ts uygulamanın ilk çalıştığı ayağı kalktığı dosya
+Polyfills.ts browserların desteklemediği tüm importlar bu dosya içerisinde uygulama tanıtılır.
+
+5- ng test 
+ile projeyi test specleri çalışır.
+
+6- Package.json dosyası üzerinden tüm uygulamada kullanılan paketleri görebilir ve yönetebiliriz. scripts node ile uygulama içinde bazı scriptler npm komutları ile çalıştırabiliriz
+
+örnek : npm run serve-test 
+
+
+Custom Porttan uygulamayı çalıştırma
+
+ng serve --o --port 4203
+
+
+
